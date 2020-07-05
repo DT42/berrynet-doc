@@ -89,7 +89,7 @@ Here are the steps to install BerryNet on RPi:
 
 The installation will take a while.
 
-If the installation is completed successfully, next step is to [configure](https://github.com/DT42/BerryNet/wiki/Configuration) your BerryNet.
+If the installation is completed successfully, next step is to [configure](../configuration) your BerryNet.
 
 # Meet Troubles
 
@@ -97,7 +97,7 @@ If the installation fails, you can
 
 1. Check is it an [known issue](https://github.com/DT42/BerryNet/issues)
 1. [Create an issue report](https://github.com/DT42/BerryNet/issues/new) and attach `<berrynet-dir>/berrynet-install.log`
-1. Share the problem with the [community](https://github.com/DT42/BerryNet/wiki/Troubleshooting-And-Questions)
+1. Share the problem with the [community](../../community/qa)
 
 and we will try our best to check it.
 
