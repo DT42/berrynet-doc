@@ -1,0 +1,35 @@
+site_name: BerryNet
+
+theme:
+  name: material
+  logo: images/logo.png
+  favicon: images/favicon.png
+
+nav:
+  - Home: index.md
+  - Tutorials:
+    - Hello World: tutorials/hello.md
+    - Installation: tutorials/installation.md
+    - Configuration: tutorials/configuration.md
+    - BerryNet on Docker: tutorials/docker.md
+  - BerryNet Clients:
+    - Dashboard: clients/dashboard.md
+    - Camera: clients/camera.md
+    - Data Collector: clients/data_collector.md
+    - Telegram: clients/telegram.md
+    - LINE: clients/line.md
+    - Email: clients/email.md
+  - BerryNet Engines:
+    - TensorFlow Lite: engines/tflite.md
+    - OpenVINO: engines/openvino.md
+    - Darknet: engines/darknet.md
+    - Movidius: engines/movidius.md
+  - Deep Learning:
+    - Model Management: deep_learning/dlmodelbox.md
+    - Transfer Learning: deep_learning/transfer_learning.md
+  - Community:
+    - Troubleshooting and Questions: community/qa.md
+    - Repository: community/repository.md
+    - Donation: community/donation.md
+  - Developer:
+    - Architecture: developer/architecture.md
