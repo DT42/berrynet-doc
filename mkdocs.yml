@@ -1,5 +1,12 @@
 site_name: BerryNet
 
+# GitHub information, top-right corner
+repo_name: DT42/BerryNet
+repo_url: https://github.com/DT42/BerryNet
+
+# Footer
+copyright: "&copy; BerryNet.org"
+
 theme:
   name: material
   logo: images/logo.png
