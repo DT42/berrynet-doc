@@ -11,7 +11,7 @@ In this tutorial, we will use these HWs:
 
 # Setup
 
-After followed the steps in [[Installation]], your RPi should be ready to run BerryNet.
+After followed the steps in [Installation](../installation), your RPi should be ready to run BerryNet.
 
 # Run BerryNet as Surveillance Application
 
@@ -25,7 +25,7 @@ All the services' status should be "RUNNING".
 
 ## Launch Dashboard Client
 
-We will see the detection result on Freeboard by following [the steps](https://github.com/DT42/BerryNet#dashboard-freeboard) in README.
+We will see the detection result on Freeboard by following [the steps](../../#dashboard-freeboard) in README.
 
 ## Launch Camera Client
 
@@ -37,7 +37,7 @@ The dashboard will keep updating the inference image and text results on it:
 
 ## For Raspberry Pi 3
 
-Please change the camera client's FPS from 6 to 2 in the [default configuration](https://github.com/DT42/BerryNet/wiki/Configuration), and reboot the system.
+Please change the camera client's FPS from 6 to 2 in the [default configuration](../configuration), and reboot the system.
 
 ## Next
 
@@ -50,8 +50,8 @@ $ sudo supervisorcal stop all
 If you want to
 
 * Do some data analysis, you can also enable [[Data Collector]] to collect the inference results.
-* Know more about Freeboard, please refer to the [open dashboard on your computer](https://github.com/DT42/BerryNet/wiki/Dashboard#open-dashboard-on-your-computer) section in the [[Dashboard]] document.
-* Send testing images manually instead of using camera stream, please refer to the [Camera Client Configuration](https://github.com/DT42/BerryNet#camera-client) in README.
+* Know more about Freeboard, please refer to the [open dashboard on your computer](../../clients/dashboard#open-dashboard-on-your-computer) section in the [[Dashboard]] document.
+* Send testing images manually instead of using camera stream, please refer to the [Camera Client Configuration](../../#camera-client) in README.
 * Know more about camera client, please refer to the [[Cameras]] document for more details.
 
 Hoping that this starting point can help you create your own interesting project!
