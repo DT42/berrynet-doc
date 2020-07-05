@@ -1,10 +1,10 @@
 <p align="center"><a href="http://berrynet.org" target="_blank" rel="noopener noreferrer"><img width="50%" src="https://user-images.githubusercontent.com/292790/33802809-e4726cf8-dd45-11e7-8a64-fdc4c3ff9310.png" alt="BerryNet Logo"></a></p>
 <h2  align="center">Deep Learning Gateway on Raspberry Pi And Other Edge Devices</h2>
 
-[Supporting BerryNet](https://github.com/DT42/BerryNet/wiki/Donation)
+[Supporting BerryNet](community/donation)
 
 * [Become a backer or sponsor on Open Collective](https://opencollective.com/berrynet).
-* [One-time donation via PayPal or crypto-currencies](https://github.com/DT42/BerryNet/wiki/Donation#one-time-donations).
+* [One-time donation via PayPal or crypto-currencies](community/donation#one-time-donations).
 
 ## Introduction
 
@@ -37,7 +37,7 @@ To bring easy and flexible edge AI experience to user, we keep expending support
 
 ## Installation
 
-You can install BerryNet by using pre-built image or from source. Please refer to the [Wiki page](https://github.com/DT42/BerryNet/wiki/Installation) for the details. 
+You can install BerryNet by using pre-built image or from source. Please refer to the [installation guide](tutorials/installation) for the details. 
 
 We are pushing BerryNet into Debian repository, so you will be able to install by only typing one command in the future.
 
