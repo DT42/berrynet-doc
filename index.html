@@ -1,0 +1,1052 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.3">
+    
+    
+      
+        <title>BerryNet</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="." title="BerryNet" class="md-header-nav__button md-logo" aria-label="BerryNet">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            BerryNet
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/DT42/BerryNet/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    DT42/BerryNet
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="BerryNet" class="md-nav__button md-logo" aria-label="BerryNet">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    BerryNet
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/DT42/BerryNet/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    DT42/BerryNet
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Home
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+      Home
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-and-stop-berrynet" class="md-nav__link">
+    Start and Stop BerryNet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-freeboard" class="md-nav__link">
+    Dashboard: Freeboard
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard: Freeboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-freeboard-on-rpi3-with-touch-screen" class="md-nav__link">
+    Open Freeboard on RPi3 (with touch screen)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-freeboard-on-another-computer" class="md-nav__link">
+    Open Freeboard on another computer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-data-collector" class="md-nav__link">
+    Enable Data Collector
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera-client" class="md-nav__link">
+    Camera Client
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-your-data-to-train" class="md-nav__link">
+    Use Your Data To Train
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    Discussion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Tutorials
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/hello/" title="Hello World" class="md-nav__link">
+      Hello World
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/configuration/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/docker/" title="BerryNet on Docker" class="md-nav__link">
+      BerryNet on Docker
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      BerryNet Clients
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="BerryNet Clients" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        BerryNet Clients
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="clients/dashboard/" title="Dashboard" class="md-nav__link">
+      Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="clients/camera/" title="Camera" class="md-nav__link">
+      Camera
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="clients/data_collector/" title="Data Collector" class="md-nav__link">
+      Data Collector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="clients/telegram/" title="Telegram" class="md-nav__link">
+      Telegram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="clients/line/" title="LINE" class="md-nav__link">
+      LINE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="clients/email/" title="Email" class="md-nav__link">
+      Email
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      BerryNet Engines
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="BerryNet Engines" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        BerryNet Engines
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="engines/tflite/" title="TensorFlow Lite" class="md-nav__link">
+      TensorFlow Lite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="engines/openvino/" title="OpenVINO" class="md-nav__link">
+      OpenVINO
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="engines/darknet/" title="Darknet" class="md-nav__link">
+      Darknet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="engines/movidius/" title="Movidius" class="md-nav__link">
+      Movidius
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Deep Learning
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Deep Learning" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Deep Learning
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="deep_learning/dlmodelbox/" title="Model Management" class="md-nav__link">
+      Model Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="deep_learning/transfer_learning/" title="Transfer Learning" class="md-nav__link">
+      Transfer Learning
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Community
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Community" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Community
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="community/qa/" title="Troubleshooting and Questions" class="md-nav__link">
+      Troubleshooting and Questions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="community/repository/" title="Repository" class="md-nav__link">
+      Repository
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="community/donation/" title="Donation" class="md-nav__link">
+      Donation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Developer
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Developer" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Developer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-and-stop-berrynet" class="md-nav__link">
+    Start and Stop BerryNet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-freeboard" class="md-nav__link">
+    Dashboard: Freeboard
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard: Freeboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-freeboard-on-rpi3-with-touch-screen" class="md-nav__link">
+    Open Freeboard on RPi3 (with touch screen)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-freeboard-on-another-computer" class="md-nav__link">
+    Open Freeboard on another computer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-data-collector" class="md-nav__link">
+    Enable Data Collector
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera-client" class="md-nav__link">
+    Camera Client
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-your-data-to-train" class="md-nav__link">
+    Use Your Data To Train
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    Discussion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/DT42/BerryNet/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                  <h1>Home</h1>
+                
+                <p align="center"><a href="http://berrynet.org" target="_blank" rel="noopener noreferrer"><img width="50%" src="https://user-images.githubusercontent.com/292790/33802809-e4726cf8-dd45-11e7-8a64-fdc4c3ff9310.png" alt="BerryNet Logo"></a></p>
+
+<h2  align="center">Deep Learning Gateway on Raspberry Pi And Other Edge Devices</h2>
+
+<p><a href="community/donation">Supporting BerryNet</a></p>
+<ul>
+<li><a href="https://opencollective.com/berrynet">Become a backer or sponsor on Open Collective</a>.</li>
+<li><a href="community/donation#one-time-donations">One-time donation via PayPal or crypto-currencies</a>.</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>This project turns edge devices such as Raspberry Pi into an intelligent gateway with deep learning running on it. No internet connection is required, everything is done locally on the edge device itself. Further, multiple edge devices can create a distributed AIoT network.</p>
+<p>At DT42, we believe that bringing deep learning to edge devices is the trend towards the future. It not only saves costs of data transmission and storage but also makes devices able to respond according to the events shown in the images or videos without connecting to the cloud.</p>
+<p><img alt="Figure 1" src="https://user-images.githubusercontent.com/292790/45943626-a3d28b80-c019-11e8-829c-5eb6afd3faa4.png" /></p>
+<p align="center">Figure 1: BerryNet architecture</p>
+
+<p>Figure 1 shows the software architecture of the project, we use Node.js/Python, MQTT and an AI engine to analyze images or video frames with deep learning. So far, there are two default types of AI engines, the classification engine (with Inception v3 <a href="https://arxiv.org/pdf/1512.00567.pdf">[1]</a> model) and the object detection engine (with TinyYOLO <a href="https://pjreddie.com/media/files/papers/YOLO9000.pdf">[2]</a> model or MobileNet SSD <a href="https://arxiv.org/pdf/1704.04861.pdf">[3]</a> model). Figure 2 shows the differences between classification and object detection.</p>
+<p><img alt="Figure 2" src="https://cloud.githubusercontent.com/assets/292790/25520013/d9497738-2c2c-11e7-9693-3840647f2e1e.jpg" /></p>
+<p align="center">Figure 2: Classification vs detection</p>
+
+<p>One of the application of this intelligent gateway is to use the camera to monitor the place you care about. For example, Figure 3 shows the analyzed results from the camera hosted in the DT42 office. The frames were captured by the IP camera and they were submitted into the AI engine. The output from the AI engine will be shown in the dashboard. We are working on the Email and IM notification so you can get a notification when there is a dog coming into the meeting area with the next release.</p>
+<p><img alt="Figure 3" src="https://cloud.githubusercontent.com/assets/292790/25498294/0ab79976-2bba-11e7-9114-46e328d15a18.gif" /></p>
+<p align="center">Figure 3: Object detection result example</p>
+
+<p>To bring easy and flexible edge AI experience to user, we keep expending support of the AI engines and the reference HWs.</p>
+<p><img alt="Figure 4" src="https://user-images.githubusercontent.com/292790/64026655-c2b69780-cb71-11e9-90b9-6269319012f1.png" /></p>
+<p align="center">Figure 4: Reference hardwares</p>
+
+<h2 id="installation">Installation</h2>
+<p>You can install BerryNet by using pre-built image or from source. Please refer to the <a href="tutorials/installation">installation guide</a> for the details. </p>
+<p>We are pushing BerryNet into Debian repository, so you will be able to install by only typing one command in the future.</p>
+<p>Here is the quick steps to install from source:</p>
+<pre><code>$ git clone https://github.com/DT42/BerryNet.git
+$ cd BerryNet
+$ ./configure
+</code></pre>
+
+<h2 id="start-and-stop-berrynet">Start and Stop BerryNet</h2>
+<p>BerryNet performs an AIoT application by connecting independent components together. Component types include but not limited to AI engine, I/O processor, data processor (algorithm), or data collector.</p>
+<p>We recommend to manage BerryNet componetns by <a href="http://supervisord.org/">supervisor</a>, but you can also run BerryNet components manually. You can manage BerryNet via <code>supervisorctl</code>:</p>
+<pre><code>```
+# Check status of BerryNet components
+$ sudo supervisorctl status all
+
+# Stop Camera client
+$ sudo supervisorctl stop camera
+
+# Restart all components
+$ sudo supervisorctl restart all
+
+# Show last stderr logs of camera client
+$ sudo supervisorctl tail camera stderr
+```
+</code></pre>
+<p>For more possibilities of supervisorctl, please refer to the <a href="http://supervisord.org/running.html#running-supervisorctl">official tutorial</a>.</p>
+<p>The default application has three components:</p>
+<ul>
+<li>Camera client to provide input images</li>
+<li>Object detection engine to find type and position of the detected objects in an image</li>
+<li>Dashboard to display the detection results</li>
+</ul>
+<p>You will learn how to configure or change the components in the <a href="#configuration">Configuration</a> section.</p>
+<h2 id="dashboard-freeboard">Dashboard: Freeboard</h2>
+<h3 id="open-freeboard-on-rpi3-with-touch-screen">Open Freeboard on RPi3 (with touch screen)</h3>
+<p>Freeboard is a web-based dashboard. Here are the steps to show the detection result iamge and text on Freeboard:</p>
+<ul>
+<li>1: Enter <code>http://127.0.0.1:8080</code> in browser's URL bar, and press enter</li>
+<li>2: <a href="https://raw.githubusercontent.com/DT42/BerryNet/master/config/dashboard-tflitedetector.json">Download</a> the Freeboard configuration for default application, <code>dashboard-tflitedetector.json</code></li>
+<li>2: Click <code>LOAD FREEBOARD</code>, and select the newly downloaded <code>dashboard-tflitedetector.json</code></li>
+<li>3: Wait for seconds, you should see the inference result image and text on Freeboard</li>
+</ul>
+<h3 id="open-freeboard-on-another-computer">Open Freeboard on another computer</h3>
+<p>Assuming that you have two devices:</p>
+<ul>
+<li>Device A with IP <code>192.168.1.42</code>, BerryNet default application runs on it</li>
+<li>Device B with IP <code>192.168.1.43</code>, you want to open Freeboard and see the detection result on it</li>
+</ul>
+<p>Here are the steps:</p>
+<ul>
+<li>1: Enter <code>http://192.168.1.42:8080</code> in browser's URL bar, and press enter</li>
+<li>2: <a href="https://raw.githubusercontent.com/DT42/BerryNet/master/config/dashboard-tflitedetector.json">Download</a> the Freeboard configuration for default application, <code>dashboard-tflitedetector.json</code></li>
+<li>3: Replace all the <code>localhost</code> to <code>192.168.1.42</code> in <code>dashboard-tflitedetector.json</code></li>
+<li>2: Click <code>LOAD FREEBOARD</code>, and select the newly downloaded <code>dashboard-tflitedetector.json</code></li>
+<li>3: Wait for seconds, you should see the inference result image and text on Freeboard</li>
+</ul>
+<p>For more details about dashboard configuration (e.g. how to add widgets), please refer to <a href="https://github.com/Freeboard/freeboard">Freeboard project</a>.</p>
+<h2 id="enable-data-collector">Enable Data Collector</h2>
+<p>You might want to store the snapshot and inference results for data analysis.</p>
+<p>To run BerryNet data collector manually, you can run the command below:</p>
+<pre><code>$ bn_data_collector --topic-config &lt;topic-config-filepath&gt; --data-dirpath &lt;result-dirpath&gt;
+</code></pre>
+
+<p>The topic config indicates what MQTT topic the data collector will listen, and what handler will be triggered. Here is a topic config exmaple:</p>
+<pre><code>{
+    &quot;berrynet/engine/tflitedetector/result&quot;: &quot;self.update&quot;
+}
+</code></pre>
+
+<p>The inference result image and text will be saved into the indicated result directory.</p>
+<h2 id="configuration">Configuration</h2>
+<p>The default supervisor config is at <code>/etc/supervisor/conf.d/berrynet-tflite.conf</code>. To write your own supervisor config, you can refer to <a href="https://github.com/DT42/BerryNet/tree/master/config/supervisor/conf.d">here</a> for more example supervisor configs of BerryNet</p>
+<h3 id="camera-client">Camera Client</h3>
+<p>BerryNet camera client can run in two modes: stream or file. In stream mode, local camera (e.g. USB camera and RPi camera) and IP camera can be supported, and input frame rate (FPS) can be changed on demand (default is 1). In file mode, user can indicate filepath as input source.</p>
+<p>To run camera client in stream mode:</p>
+<pre><code>$ bn_camera --fps 5
+</code></pre>
+
+<p>To run camera client in file mode:</p>
+<pre><code>$ bn_camera --mode file --filepath &lt;image-filepath&gt;
+</code></pre>
+
+<h2 id="use-your-data-to-train">Use Your Data To Train</h2>
+<p>The original instruction of retraining YOLOv2 model see <a href="https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects">github repository of darknet</a></p>
+<p>In the current of BerryNet, TinyYolo is used instead of YOLOv2. 
+The major differences are:</p>
+<ol>
+<li>Create file yolo-obj.cfg with the same content as in <code>tiny-yolo.cfg</code></li>
+<li>Download pre-trained weights of darknet reference model, <code>darknet.weights.12</code>, for the convolutional layers (6.1MB)
+https://drive.google.com/drive/folders/0B-oZJEwmkAObMzAtc2QzZDhyVGM?usp=sharing</li>
+</ol>
+<p>The rest parts are the same as retraining YOLO.</p>
+<p>If you use <a href="http://labelme.csail.mit.edu/Release3.0/">LabelMe</a> to annotate data, <code>utils/xmlTotxt.py</code> can help convert the xml format to the text format that darknet uses.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Please refer to the <a href="https://join.slack.com/t/berrynet/shared_invite/enQtODg5MjA0ODExMjUzLWIwMDNkZWExZGE2Njc1ZDljMmFiOWJlZDdmZmEwYmQ4YTJiNzg2NDc1NTJhMDVkMzhmNzA3YTU0ZTc4M2JiNTE">Slack</a>, <a href="https://t.me/berrynetdev">Telegram Group</a> or <a href="https://groups.google.com/a/dt42.io/d/forum/berrynet">Google Group</a> for questions, suggestions, or any idea discussion.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="tutorials/hello/" title="Hello World" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Hello World
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; BerryNet.org
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.9b3611bd.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
