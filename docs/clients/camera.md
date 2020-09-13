@@ -32,15 +32,11 @@ Before setting RTSP/MJPEG video stream as input source, I recommend to verify th
 
 * If input is RTSP video stream
 
-    ```
-    $ bn_camera --stream-src rtsp://<stream-rtsp-url> [--fps N]
-    ```
+        $ bn_camera --stream-src rtsp://<stream-rtsp-url> [--fps N]
 
 * If input is MJPEG video stream
 
-    ```
-    $ bn_camera --stream-src http://<stream-mjpeg-url> [--fps N]
-    ```
+        $ bn_camera --stream-src http://<stream-mjpeg-url> [--fps N]
 
 To get stream URL of an IP camera, please refer to the user manual of your IP camera, or check the [camera connection database](https://www.ispyconnect.com/sources.aspx).
 

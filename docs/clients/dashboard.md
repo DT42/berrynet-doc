@@ -41,13 +41,13 @@ and you can save the new configuration by clicking `SAVE FREEBOARD`.
 # Frequent Questions
 
 * Q1: I can not see anything on dashboard?
-  * A: Please follow the steps in [this section](#open-dashboard-on-your-computer).
+    * A: Please follow the steps in [this section](#open-dashboard-on-your-computer).
 
 * Q2: The status of the data sources look good, but I still can not see anything on dashboard?
-  * A: Please [open an issue](https://github.com/DT42/BerryNet/issues/new) and share RPi's system log (`/var/log/syslog`) with us. We will help check the issue.
+    * A: Please [open an issue](https://github.com/DT42/BerryNet/issues/new) and share RPi's system log (`/var/log/syslog`) with us. We will help check the issue.
 
 * Q3: Can BerryNet support any other dashboard?
-  * A: Yes, if a dashboard supports MQTT, BerryNet can support it technically. Please [share](../../community/qa) your favorite dashboard with the community, and we can try to integrate it into BerryNet.
+    * A: Yes, if a dashboard supports MQTT, BerryNet can support it technically. Please [share](../../community/qa) your favorite dashboard with the community, and we can try to integrate it into BerryNet.
 
 # Customization
 

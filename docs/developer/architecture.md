@@ -13,17 +13,17 @@ MQTT topic format is based on the concept:
 MQTT topics using in BerryNet
 
 * AI services
-  * `berrynet/engine/darknet/result`
-  * `berrynet/engine/ovclassifier/result`
-  * `berrynet/engine/ovdetector/result`
-  * `berrynet/engine/pipeline/result`
-  * `berrynet/engine/tensorflow/result`
-  * `berrynet/engine/tfliteclassifier/result`
-  * `berrynet/engine/tflitedetector/result`
+    * `berrynet/engine/darknet/result`
+    * `berrynet/engine/ovclassifier/result`
+    * `berrynet/engine/ovdetector/result`
+    * `berrynet/engine/pipeline/result`
+    * `berrynet/engine/tensorflow/result`
+    * `berrynet/engine/tfliteclassifier/result`
+    * `berrynet/engine/tflitedetector/result`
 * Clients
-  * `berrynet/data/rgbimage`
-  * `berrynet/dashboard/snapshot`
-  * `berrynet/dashboard/inferenceResult`
+    * `berrynet/data/rgbimage`
+    * `berrynet/dashboard/snapshot`
+    * `berrynet/dashboard/inferenceResult`
 
 # Generic Inference Result Format
 

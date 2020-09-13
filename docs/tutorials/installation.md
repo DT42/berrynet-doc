@@ -14,10 +14,8 @@ If the reference command listed below starts with
 
     Assuming that the image is saved to `/home/DT42/Downloads/` directory.
 
-    ```
-    host $ md5sum /home/DT42/Downloads/2019-07-15-raspbian-buster-berrynet.zip
-    8bda8053a69995814a0ca6fa60b1d49e  2019-07-15-raspbian-buster-berrynet.zip
-    ```
+        host $ md5sum /home/DT42/Downloads/2019-07-15-raspbian-buster-berrynet.zip
+        8bda8053a69995814a0ca6fa60b1d49e  2019-07-15-raspbian-buster-berrynet.zip
     
     You can get older releases from [prior release notes](https://github.com/DT42/BerryNet/releases)
 
@@ -25,9 +23,7 @@ If the reference command listed below starts with
 
     Assuming that the inserted SD card is represented as `/dev/sdb` on system. (If you see other similar device notes like `/dev/sdb1` or `/dev/sdb2`, you can ignore them without causing any problem.)
 
-    ```
-    host $ unzip -p 2019-07-15-raspbian-buster-berrynet.zip | sudo dd of=/dev/sdb bs=4M conv=fsync status=progress
-    ```
+        host $ unzip -p 2019-07-15-raspbian-buster-berrynet.zip | sudo dd of=/dev/sdb bs=4M conv=fsync status=progress
 
     Your SD card size has to be >= **8GB**.
 
@@ -50,9 +46,7 @@ If the reference command listed below starts with
 
     Launch `raspi-config`
 
-    ```
-    rpi $ sudo raspi-config
-    ```
+        rpi $ sudo raspi-config
 
     and choose "Advanced Options" -> "Expend Filesystem".
 
@@ -60,10 +54,8 @@ If the reference command listed below starts with
 
     The default BerryNet in the image is verified. If you are interested in the latest features, you can update BerryNet by executing the commands:
 
-    ```
-    rpi $ sudo apt update
-    rpi $ sudo apt install -y berrynet
-    ```
+        rpi $ sudo apt update
+        rpi $ sudo apt install -y berrynet
 
 1. Reboot RPi and login again.
 1. BerryNet default detection application is running in background after booting.
@@ -76,16 +68,12 @@ Here are the steps to install BerryNet on RPi:
 
 1. Get BerryNet source codes
 
-    ```
-    rpi $ git clone https://github.com/DT42/BerryNet.git
-    rpi $ cd BerryNet
-    ```
+        rpi $ git clone https://github.com/DT42/BerryNet.git
+        rpi $ cd BerryNet
 
 1. Execute installation script
 
-    ```
-    rpi $ ./configure
-    ```
+        rpi $ ./configure
 
 The installation will take a while.
 

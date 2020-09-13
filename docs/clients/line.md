@@ -21,16 +21,12 @@ BerryNet LINE client helps send the texts and images of the inference results to
 
 1. Add the 3 channel settings into BerryNet configuration file (`/usr/local/berrynet/config.js`)
 
-    ```
-    config.LINETargetUserID = 'your-user-id';
-    config.LINEChannelSecret = 'your-channel-secret';
-    config.LINEChannelAccessToken = 'your-channel-access-token';
-    ```
+        config.LINETargetUserID = 'your-user-id';
+        config.LINEChannelSecret = 'your-channel-secret';
+        config.LINEChannelAccessToken = 'your-channel-access-token';
 
 1. Run BerryNet LINE client
 
-    ```
-    $ nodejs /usr/local/berrynet/line.js
-    ```
+        $ nodejs /usr/local/berrynet/line.js
 
 1. Now, you can receive BerryNet inference results from your LINE mobile app.

@@ -19,9 +19,7 @@ You can receive the notification images (image with classification or detection 
 
 1. Run BerryNet Telegram Client.
 
-    ```
-    $ bn_telegram --token <token>
-    ```
+        $ bn_telegram --token <token>
 
     The token parameter can be a token string or a token filepath:
 
@@ -31,12 +29,10 @@ You can receive the notification images (image with classification or detection 
         * Any filepath is okay and we suggest `$HOME/.config/berrynet/telegram.json`.
         * Configuration file format
 
-            ```
-            $ cat $HOME/.config/berrynet/telegram.json
-            {
-                "token": "<telegram-token>"
-            }
-            ```
+                $ cat $HOME/.config/berrynet/telegram.json
+                {
+                    "token": "<telegram-token>"
+                }
 
     Note: `bn_telegram` is not in the latest system image. You can download the [source code](https://github.com/DT42/BerryNet/blob/master/berrynet/client/telegram_bot.py) and run `python3 telegram_bot.py ...` before we update the system image.
 
@@ -47,4 +43,3 @@ You can receive the notification images (image with classification or detection 
     `Dear, I am ready to help send notification`
 
     You will receive notification images in your mobile/desktop Telegram app.
-    ```

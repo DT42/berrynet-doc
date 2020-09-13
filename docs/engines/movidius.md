@@ -22,9 +22,7 @@ Here are the steps to enable the support:
 
 1. Install dependencies and inference engine:
 
-    ```
-    $ bash utils/install-movidius.sh
-    ```
+        $ bash utils/install-movidius.sh
 
 1. Update BerryNet inference engine settings
     1. Edit `/usr/local/bin/berrynet-manager`
