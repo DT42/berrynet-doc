@@ -49,7 +49,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#open-dashboard-on-rpi3-with-touchscreen" class="md-skip">
+        <a href="#dashboard-client" class="md-skip">
           Skip to content
         </a>
       
@@ -300,9 +300,83 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Dashboard
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Dashboard" class="md-nav__link md-nav__link--active">
       Dashboard
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fbdashboard" class="md-nav__link">
+    FBDashboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#freeboard" class="md-nav__link">
+    Freeboard
+  </a>
+  
+    <nav class="md-nav" aria-label="Freeboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-freeboard-on-rpi3-with-touchscreen" class="md-nav__link">
+    Open Freeboard on RPi3 with Touchscreen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-freeboard-on-your-computer" class="md-nav__link">
+    Open Freeboard on Your Computer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customization" class="md-nav__link">
+    Customization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frequent-questions" class="md-nav__link">
+    Frequent Questions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -629,6 +703,64 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fbdashboard" class="md-nav__link">
+    FBDashboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#freeboard" class="md-nav__link">
+    Freeboard
+  </a>
+  
+    <nav class="md-nav" aria-label="Freeboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-freeboard-on-rpi3-with-touchscreen" class="md-nav__link">
+    Open Freeboard on RPi3 with Touchscreen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-freeboard-on-your-computer" class="md-nav__link">
+    Open Freeboard on Your Computer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customization" class="md-nav__link">
+    Customization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frequent-questions" class="md-nav__link">
+    Frequent Questions
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -647,8 +779,29 @@
                   
                 
                 
-                <p>Dashboard is the place for displaying BerryNet's status, and the default dashboard is <a href="https://freeboard.io/">Freeboard</a> which is a browser-based dashboard.</p>
-<h1 id="open-dashboard-on-rpi3-with-touchscreen">Open Dashboard on RPi3 with Touchscreen</h1>
+                <h1 id="dashboard-client">Dashboard Client</h1>
+<p>Dashboard is the place for displaying BerryNet's inference image and text results.</p>
+<p>BerryNet provides two dashboard clients: <a href="#fbdashboard">FBDashboard</a> and <a href="#freeboard">Freeboard</a>.</p>
+<h2 id="fbdashboard">FBDashboard</h2>
+<p>FBDashboard (framebuffer dashboard) is easy-to-use by only one command:</p>
+<pre><code>$ bn_dashboard --no-full-screen --no-decoration --topic berrynet/engine/tflitedetector/result
+</code></pre>
+
+<p>FBDashboard shows a black screen initially and shows the inference image after received the inference result.</p>
+<p><img alt="bn-dashboar-window" src="https://user-images.githubusercontent.com/292790/98456531-cbfdb400-21b9-11eb-8f00-133aa11f3f9f.png" /></p>
+<p>In the example above, the inference engine pasted the text results (bounding boxes and labels) on the image. We use the <code>no-decoration</code> parameter, and FBDashboard will only display the inference image without pasting the text result again.</p>
+<p>This makes debugging easy because FBDashboard can</p>
+<ul>
+<li>listen to an inference engine and display the inference image with or without inference text result flexibly.</li>
+<li>show the inference text result on console by using the <code>--debug</code> parameter</li>
+<li>
+<p>listen to an input client (e.g., camera) and display the input image to see if the input client works as expected.</p>
+<p><img alt="bn-dashboard-cli-debug" src="https://user-images.githubusercontent.com/292790/98456704-e173dd80-21bb-11eb-86c0-a0aaa5ab3323.png" /></p>
+</li>
+</ul>
+<h2 id="freeboard">Freeboard</h2>
+<p><a href="https://freeboard.io/">Freeboard</a> is a browser-based dashboard and displays user-defined widgets (inference image, inference text result, execution logs, etc.)</p>
+<h3 id="open-freeboard-on-rpi3-with-touchscreen">Open Freeboard on RPi3 with Touchscreen</h3>
 <p>Open browser and enter the URL:</p>
 <pre><code>http://localhost/berrynet-dashboard
 </code></pre>
@@ -658,8 +811,8 @@
 <p><img alt="" src="https://user-images.githubusercontent.com/292790/58027370-0f3e1000-7b4b-11e9-8a6f-db0bf5a21cad.png" /></p>
 <p>and choose the <a href="https://raw.githubusercontent.com/DT42/BerryNet/master/config/dashboard-tflitedetector.json">default configuration</a> (or at <code>&lt;berrynet-src&gt;/config/dashboard-tflitedetector.json</code>). After the configuration is loaded, Freeboard will look like</p>
 <p><img alt="" src="https://user-images.githubusercontent.com/292790/58022824-e31d9180-7b40-11e9-8706-8091d8640920.png" /></p>
-<p>Now your dashboard is ready to receive the inference results from BerryNet.</p>
-<h1 id="open-dashboard-on-your-computer">Open Dashboard on Your Computer</h1>
+<p>Now your Freeboard is ready to receive the inference results from BerryNet.</p>
+<h3 id="open-freeboard-on-your-computer">Open Freeboard on Your Computer</h3>
 <p>Open browser and enter the URL:</p>
 <pre><code>http://&lt;rpi-ip&gt;/berrynet-dashboard
 </code></pre>
@@ -669,16 +822,18 @@
 <p>The only difference is that you need to change the <code>MQTT SERVER</code> of data source from <code>localhost</code> to RPi's IP (gateway IP). Click <code>Detection Result</code></p>
 <p><img alt="" src="https://user-images.githubusercontent.com/292790/58029129-8a54f580-7b4e-11e9-8567-d23630c3c712.png" /></p>
 <p>and you can save the new configuration by clicking <code>SAVE FREEBOARD</code>.</p>
-<h1 id="frequent-questions">Frequent Questions</h1>
+<h3 id="customization">Customization</h3>
+<p>For more details about configuration (e.g. how to add widgets), please refer to <a href="https://github.com/Freeboard/freeboard">Freeboard project</a>.</p>
+<h2 id="frequent-questions">Frequent Questions</h2>
 <ul>
 <li>
-<p>Q1: I can not see anything on dashboard?</p>
+<p>Q1: I can not see anything on Freeboard?</p>
 <ul>
 <li>A: Please follow the steps in <a href="#open-dashboard-on-your-computer">this section</a>.</li>
 </ul>
 </li>
 <li>
-<p>Q2: The status of the data sources look good, but I still can not see anything on dashboard?</p>
+<p>Q2: The status of the data sources look good, but I still can not see anything on Freeboard?</p>
 <ul>
 <li>A: Please <a href="https://github.com/DT42/BerryNet/issues/new">open an issue</a> and share RPi's system log (<code>/var/log/syslog</code>) with us. We will help check the issue.</li>
 </ul>
@@ -690,8 +845,6 @@
 </ul>
 </li>
 </ul>
-<h1 id="customization">Customization</h1>
-<p>For more details about configuration (e.g. how to add widgets), please refer to <a href="https://github.com/Freeboard/freeboard">Freeboard project</a>.</p>
                 
               
               

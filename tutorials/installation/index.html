@@ -49,7 +49,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#install-from-pre-built-image" class="md-skip">
+        <a href="#installation" class="md-skip">
           Skip to content
         </a>
       
@@ -234,9 +234,70 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Installation
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Installation" class="md-nav__link md-nav__link--active">
       Installation
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-from-pre-built-image" class="md-nav__link">
+    Install From Pre-Built Image
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-from-source" class="md-nav__link">
+    Install From Source
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meet-troubles" class="md-nav__link">
+    Meet Troubles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-history" class="md-nav__link">
+    Release History
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-the-future" class="md-nav__link">
+    In The Future
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -629,6 +690,51 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-from-pre-built-image" class="md-nav__link">
+    Install From Pre-Built Image
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-from-source" class="md-nav__link">
+    Install From Source
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meet-troubles" class="md-nav__link">
+    Meet Troubles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-history" class="md-nav__link">
+    Release History
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-the-future" class="md-nav__link">
+    In The Future
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -647,7 +753,8 @@
                   
                 
                 
-                <p>There are two ways to install BerryNet:</p>
+                <h1 id="installation">Installation</h1>
+<p>There are two ways to install BerryNet:</p>
 <ol>
 <li>Install from pre-built image</li>
 <li>Install from source</li>
@@ -657,7 +764,7 @@
 <li><code>host</code>: it means you should do it on the host machine (a Linux PC is preferred). </li>
 <li><code>rpi</code>: it means you should do it on Raspberry Pi.</li>
 </ul>
-<h1 id="install-from-pre-built-image">Install From Pre-Built Image</h1>
+<h2 id="install-from-pre-built-image">Install From Pre-Built Image</h2>
 <ol>
 <li>
 <p>Download the <a href="https://berrynet.s3.amazonaws.com/images/2019-07-15-raspbian-buster-berrynet.zip">latest image</a>. To check the integrity of the downloaded image, you can check the md5sum of the image and compare it with the <a href="https://berrynet.s3.amazonaws.com/images/2019-07-15-raspbian-buster-berrynet.md5sum">checksum file</a>.</p>
@@ -713,7 +820,7 @@ rpi $ sudo apt install -y berrynet
 </li>
 <li>BerryNet default detection application is running in background after booting.</li>
 </ol>
-<h1 id="install-from-source">Install From Source</h1>
+<h2 id="install-from-source">Install From Source</h2>
 <p>Before BerryNet installation, please creating a system SD card by following the <a href="https://www.raspberrypi.org/downloads/raspbian/">RPi official installation guide</a>.</p>
 <p>Here are the steps to install BerryNet on RPi:</p>
 <ol>
@@ -731,7 +838,7 @@ rpi $ cd BerryNet
 </ol>
 <p>The installation will take a while.</p>
 <p>If the installation is completed successfully, next step is to <a href="../configuration">configure</a> your BerryNet.</p>
-<h1 id="meet-troubles">Meet Troubles</h1>
+<h2 id="meet-troubles">Meet Troubles</h2>
 <p>If the installation fails, you can</p>
 <ol>
 <li>Check is it an <a href="https://github.com/DT42/BerryNet/issues">known issue</a></li>
@@ -739,14 +846,14 @@ rpi $ cd BerryNet
 <li>Share the problem with the <a href="../../community/qa">community</a></li>
 </ol>
 <p>and we will try our best to check it.</p>
-<h1 id="release-history">Release History</h1>
+<h2 id="release-history">Release History</h2>
 <p>All the Raspbian images is available on https://downloads.raspberrypi.org/</p>
 <p>BerryNet releases base</p>
 <ul>
 <li>v3.7.0: 2019-07-10 buster</li>
 <li>v3.5.1: 2019-04-08 stretch</li>
 </ul>
-<h1 id="in-the-future">In The Future</h1>
+<h2 id="in-the-future">In The Future</h2>
 <p>We are packaging BerryNet and its dependencies to be Debian packages. The long-term goal is to make all the packages followed Debian policy can be available in Debian by default.</p>
                 
               

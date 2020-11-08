@@ -49,7 +49,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#usb-camera" class="md-skip">
+        <a href="#camera-client" class="md-skip">
           Skip to content
         </a>
       
@@ -312,9 +312,76 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Camera
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Camera" class="md-nav__link md-nav__link--active">
       Camera
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usb-camera" class="md-nav__link">
+    USB Camera
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpi-camera" class="md-nav__link">
+    RPi Camera
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ip-camera" class="md-nav__link">
+    IP Camera
+  </a>
+  
+    <nav class="md-nav" aria-label="IP Camera">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-nest-cameras-snapshot-url" class="md-nav__link">
+    Get Nest Camera's Snapshot URL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-local-image-for-development-or-debugging" class="md-nav__link">
+    Single Local Image (for Development or Debugging)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -629,6 +696,57 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usb-camera" class="md-nav__link">
+    USB Camera
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpi-camera" class="md-nav__link">
+    RPi Camera
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ip-camera" class="md-nav__link">
+    IP Camera
+  </a>
+  
+    <nav class="md-nav" aria-label="IP Camera">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-nest-cameras-snapshot-url" class="md-nav__link">
+    Get Nest Camera's Snapshot URL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-local-image-for-development-or-debugging" class="md-nav__link">
+    Single Local Image (for Development or Debugging)
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -647,14 +765,15 @@
                   
                 
                 
-                <p>BerryNet camera client (<code>bn_camera</code>) supports three types of input sources</p>
+                <h1 id="camera-client">Camera Client</h1>
+<p>BerryNet camera client (<code>bn_camera</code>) supports three types of input sources</p>
 <ul>
 <li>Physically connected camera, e.g. USB camera and Pi camera.</li>
 <li>Internet camera (IP camera) providing RTSP or MJPEG video stream.</li>
 <li>Single image for development or debugging.</li>
 </ul>
 <p>We will introduce how to use these different types of input sources below.</p>
-<h1 id="usb-camera">USB Camera</h1>
+<h2 id="usb-camera">USB Camera</h2>
 <p>By default, camera client will use physically connected camera as input source:</p>
 <pre><code>$ bn_camera
 </code></pre>
@@ -663,10 +782,10 @@
 <pre><code>$ bn_camera --fps 5
 </code></pre>
 
-<h1 id="rpi-camera">RPi Camera</h1>
+<h2 id="rpi-camera">RPi Camera</h2>
 <p>The usage of RPi camera is the same as USB camera above.</p>
 <p><a href="https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/5">How to verify PiCamera HW</a></p>
-<h1 id="ip-camera">IP Camera</h1>
+<h2 id="ip-camera">IP Camera</h2>
 <p>Before setting RTSP/MJPEG video stream as input source, I recommend to verify that the video stream can be played by a media player (e.g. VLC media player or Totem movie player).</p>
 <ul>
 <li>
@@ -681,14 +800,14 @@
 </li>
 </ul>
 <p>To get stream URL of an IP camera, please refer to the user manual of your IP camera, or check the <a href="https://www.ispyconnect.com/sources.aspx">camera connection database</a>.</p>
-<h2 id="get-nest-cameras-snapshot-url">Get Nest Camera's Snapshot URL</h2>
+<h3 id="get-nest-cameras-snapshot-url">Get Nest Camera's Snapshot URL</h3>
 <p>Follow the <a href="https://codelabs.developers.google.com/codelabs/wwn-api-quickstart/#0">quick start guide</a> to get snapshot URL. The high-level steps are:</p>
 <ol>
 <li>Create a "product" (the concept is like a project, we will use it for personal usage).</li>
 <li>Get access token from Nest cloud service.</li>
 <li>Get snapshot URL with the access token Nest cloud service.</li>
 </ol>
-<h1 id="single-image-for-development-or-debugging">Single Image (for Development or Debugging)</h1>
+<h2 id="single-local-image-for-development-or-debugging">Single Local Image (for Development or Debugging)</h2>
 <pre><code>$ bn_camera --mode file --filepath &lt;image-filepath&gt;
 </code></pre>
                 

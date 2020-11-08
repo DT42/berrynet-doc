@@ -49,7 +49,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#system-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -600,9 +600,83 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Architecture
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Architecture" class="md-nav__link md-nav__link--active">
       Architecture
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    Communication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generic-inference-result-format" class="md-nav__link">
+    Generic Inference Result Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Generic Inference Result Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classification" class="md-nav__link">
+    Classification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detection" class="md-nav__link">
+    Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#field-description" class="md-nav__link">
+    Field Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -629,6 +703,64 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    Communication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generic-inference-result-format" class="md-nav__link">
+    Generic Inference Result Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Generic Inference Result Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classification" class="md-nav__link">
+    Classification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detection" class="md-nav__link">
+    Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#field-description" class="md-nav__link">
+    Field Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -648,9 +780,11 @@
                 
                 
                 <p><strong>NOTE: This page is not completed yet</strong></p>
-<h1 id="overview">Overview</h1>
+<h1 id="system-architecture">System Architecture</h1>
 <p>Work in Progress</p>
-<h1 id="communication">Communication</h1>
+<h2 id="overview">Overview</h2>
+<p>Work in Progress</p>
+<h2 id="communication">Communication</h2>
 <p>MQTT topic format is based on the concept:</p>
 <pre><code>berrynet/&lt;component-type&gt;/&lt;component-name&gt;/&lt;message-type&gt;[/message-additional-info...]
 </code></pre>
@@ -673,9 +807,9 @@
 </ul>
 </li>
 </ul>
-<h1 id="generic-inference-result-format">Generic Inference Result Format</h1>
+<h2 id="generic-inference-result-format">Generic Inference Result Format</h2>
 <p>Generic inference result format makes AI inference services to follow the same rule.</p>
-<h2 id="classification">Classification</h2>
+<h3 id="classification">Classification</h3>
 <pre><code>{
     &quot;timestamp&quot;: STRING,
     &quot;bytes&quot;: STRING,
@@ -690,7 +824,7 @@
 }
 </code></pre>
 
-<h2 id="detection">Detection</h2>
+<h3 id="detection">Detection</h3>
 <pre><code>{
     &quot;timestamp&quot;: STRING,
     &quot;bytes&quot;: STRING,
@@ -709,7 +843,7 @@
 }
 </code></pre>
 
-<h2 id="field-description">Field Description</h2>
+<h3 id="field-description">Field Description</h3>
 <table>
 <thead>
 <tr>
