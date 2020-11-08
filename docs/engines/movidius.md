@@ -1,5 +1,7 @@
 **IMPORTANT: This page is being updated and the content might not be 100% correct.**
 
+# Engine: Movidius
+
 [Movidius neural compute stick](https://software.intel.com/en-us/neural-compute-stick) (NCS) is an USB device containing Myriad 2, the DLA (Deep Learning Accelerator) chip.
 
 ![](https://user-images.githubusercontent.com/292790/45946533-bce03a00-c023-11e8-8745-40b787dddd8d.jpg)
@@ -16,7 +18,7 @@ BerryNet Movidius Engine helps user to create edge AIoT applications in minutes,
 |---|---|
 |[![](http://img.youtube.com/vi/xvOh-1kZ6yU/0.jpg)](http://www.youtube.com/watch?v=xvOh-1kZ6yU "Object detection: RPi3 w/ 2-NCS")|[![](http://img.youtube.com/vi/cLCUdK-at3c/0.jpg)](http://www.youtube.com/watch?v=cLCUdK-at3c "Object detection: UP Squared")|
 
-# Enable Movidius Engine
+## Enable Movidius Engine
 
 Here are the steps to enable the support:
 

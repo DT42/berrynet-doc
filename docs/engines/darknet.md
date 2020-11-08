@@ -1,8 +1,10 @@
-# Installation
+# Engine: Darknet
+
+## Installation
 
 Run the `install_darknet` function in `configure`. BerryNet dev team is making this to be easier and clearer.
 
-# Test Darknet Engine Manually
+## Test Darknet Engine Manually
 
 Use Darknet detector service and `tinyyolovoc` model package as example.
 

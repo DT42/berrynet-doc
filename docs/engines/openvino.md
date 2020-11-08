@@ -1,4 +1,6 @@
-# Installation
+# Engine: OpenVINO
+
+## Installation
 
 1. [Setup BerryNet repository](https://github.com/DT42/BerryNet-repo)
 1. Install OpenVINO packages
@@ -17,7 +19,7 @@
         # detection
         $ sudo apt-get install mobilenet-ssd-openvino
 
-# Setup
+## Setup
 
 1. Initialize OpenVINO execution environment
 
@@ -25,7 +27,7 @@
 
         $ source /opt/intel/openvino_2019.1.144/bin/setupvars.sh
 
-# Test OpenVINO Engine Manually
+## Test OpenVINO Engine Manually
 
 Use OpenVINO detector service and mobilenet-ssd-openvino model package as example.
 

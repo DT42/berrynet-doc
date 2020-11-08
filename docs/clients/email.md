@@ -1,4 +1,4 @@
-# Gmail
+# Gmail Client
 
 Gmail client can send the targeting inference result to your Gmail.
 

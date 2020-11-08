@@ -1,10 +1,14 @@
 **NOTE: This page is not completed yet**
 
-# Overview
+# System Architecture
 
 Work in Progress
 
-# Communication
+## Overview
+
+Work in Progress
+
+## Communication
 
 MQTT topic format is based on the concept:
 
@@ -25,11 +29,11 @@ MQTT topics using in BerryNet
   * `berrynet/dashboard/snapshot`
   * `berrynet/dashboard/inferenceResult`
 
-# Generic Inference Result Format
+## Generic Inference Result Format
 
 Generic inference result format makes AI inference services to follow the same rule.
 
-## Classification
+### Classification
 
 ```
 {
@@ -46,7 +50,7 @@ Generic inference result format makes AI inference services to follow the same r
 }
 ```
 
-## Detection
+### Detection
 
 ```
 {
@@ -67,7 +71,7 @@ Generic inference result format makes AI inference services to follow the same r
 }
 ```
 
-## Field Description
+### Field Description
 
 |Field|Description|Type|
 |---|---|---|

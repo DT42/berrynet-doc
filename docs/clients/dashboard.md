@@ -1,4 +1,4 @@
-# Dashboard: FBDashboard and Freeboard
+# Dashboard Client
 
 Dashboard is the place for displaying BerryNet's inference image and text results.
 

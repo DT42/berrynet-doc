@@ -1,4 +1,4 @@
-# Enable Data Collector
+# Data Collector Client
 
 Data collector (`bn_data_collector`) is useful if you want to store the snapshot and inference results for data analysis.
 
