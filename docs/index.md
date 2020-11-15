@@ -61,13 +61,13 @@ We recommend to manage BerryNet componetns by [supervisor](http://supervisord.or
     ```
     # Check status of BerryNet components
     $ sudo supervisorctl status all
-    
+
     # Stop Camera client
     $ sudo supervisorctl stop camera
-    
+
     # Restart all components
     $ sudo supervisorctl restart all
-    
+
     # Show last stderr logs of camera client
     $ sudo supervisorctl tail camera stderr
     ```
