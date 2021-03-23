@@ -2,11 +2,11 @@
 
 We accept donations through these channels:
 
-|Crypto|Wallet Address|
-|:--:|--|
-|![](https://github.com/atomiclabs/cryptocurrency-icons/raw/master/32/icon/btc.png)|`bc1qnynxdh8nlyvkgfvyw3fl22yfcvrkmqzscg2k6f`|
-|![](https://github.com/atomiclabs/cryptocurrency-icons/raw/master/32/icon/eth.png)|`0x88659538ABb056E106683F31F8FBc2f0F0aDa136`|
-|![](https://github.com/atomiclabs/cryptocurrency-icons/raw/master/32/icon/bnb.png)|`bnb1ewlh3gequz5w3ewy5urj952rs5l0kfzh5tphkj`|
+|Crypto|Wallet Address|Address QR Code|
+|:--:|--|--|
+|![](https://github.com/atomiclabs/cryptocurrency-icons/raw/master/32/icon/btc.png)|`bc1qh5l6urtszwktmd44ph3leccl7v29u6qkj3vfxx`|![](https://user-images.githubusercontent.com/292790/112134540-d28c4580-8c07-11eb-87f6-70257566c181.jpg)|
+|![](https://github.com/atomiclabs/cryptocurrency-icons/raw/master/32/icon/eth.png)|`0x472c485F9495a9681cB26eE816A81B9964524706`|![](https://user-images.githubusercontent.com/292790/112134545-d3bd7280-8c07-11eb-8d73-1736ac0593b6.jpg)|
+|![](https://github.com/atomiclabs/cryptocurrency-icons/raw/master/32/icon/bnb.png)|`bnb1wm8trtdxnsukrr9s6a29c44ljktppgcf35yq7q`|![](https://user-images.githubusercontent.com/292790/112134536-d0c28200-8c07-11eb-9599-1de2f57cff0f.jpg)|
 
 |Website|Link|
 |:--:|--|
